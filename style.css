@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    padding: 5%;
+    width: 50vw;
+    margin: 5vh;
+    border-radius: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  h1 {
+    font-family: "Young Serif", serif;
+    font-size:1.5;
+    font-weight: lighter;
+  }
+
+  .prep-time {
+    background-color: hsl(330, 100%, 98%);
+    padding: 2vw;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  .prep-time>p {
+    color: hsl(332, 51%, 32%);
+  }
+  
+  hr {
+    border: 1px solid hsl(30, 18%, 87%);
+  }
+  
+  h2 {
+    color: hsl(14, 45%, 36%);
+  }
+
+  p {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+  }
+  
+  li {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+
+}
+
+td:first-child {
+  color: hsl(30, 10%, 34%);
+  padding-left: 3vw;
+}
+
+td:nth-child(2) {
+  color: hsl(14, 45%, 36%);
+  padding-left: 10vw;
+  font-weight: bold;
+}
+
+td {
+  font-family: "Outfit", sans-serif;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1pt solid hsl(30, 18%, 87%);
+}
+
+tr:last-child{
+  border-bottom: none;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    background-color: white;
+  }
+  
+  .card {
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+    border-radius: 0%;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0%;
+    margin: 0;
+  }
+  
+  .mobil-only {
+    padding: 8%;
+  }
+  
+  h1 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .prep-time>p>b {
+    padding-left: 15px;
+  }
+
+  li>span{
+    vertical-align:middle;
+    display: inline-block;
+  }
+}
